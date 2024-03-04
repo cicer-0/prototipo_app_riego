@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Riego - App Móvil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Riego</h1>
+    <div class="status">
+      <p><strong>Humedad:</strong> <span id="humedad">--</span></p>
+      <p><strong>Luz:</strong> <span id="luz">--</span></p>
+    </div>
+  </header>
+  <main>
+    <section id="programacion">
+      <h2>Programación de Riego</h2>
+      <form id="formProgramacion">
+        <label for="frecuencia">Frecuencia (días):</label>
+        <input type="number" id="frecuencia" min="1" required>
+        <label for="duracion">Duración (minutos):</label>
+        <input type="number" id="duracion" min="1" required>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+    <section id="historial">
+      <h2>Historial de Riegos</h2>
+      <ul id="listaRiegos">
+        <!-- Aquí se llenará dinámicamente con JS -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Sistema de Riego</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
