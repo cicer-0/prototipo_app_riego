@@ -14,23 +14,12 @@
       <p><strong>Luz:</strong> <span id="luz">--</span></p>
     </div>
   </header>
-  <main>
-    <section id="programacion">
-      <h2>Programación de Riego</h2>
-      <form id="formProgramacion">
-        <label for="frecuencia">Frecuencia (días):</label>
-        <input type="number" id="frecuencia" min="1" required>
-        <label for="duracion">Duración (minutos):</label>
-        <input type="number" id="duracion" min="1" required>
-        <button type="submit">Guardar</button>
-      </form>
-    </section>
-    <section id="historial">
-      <h2>Historial de Riegos</h2>
-      <ul id="listaRiegos">
-        <!-- Aquí se llenará dinámicamente con JS -->
-      </ul>
-    </section>
+  <nav>
+    <button id="btnProgramacion">Programación de Riego</button>
+    <button id="btnHistorial">Historial de Riegos</button>
+  </nav>
+  <main id="mainContent">
+    <!-- Aquí se cargarán las diferentes vistas -->
   </main>
   <footer>
     <p>&copy; 2024 Sistema de Riego</p>
